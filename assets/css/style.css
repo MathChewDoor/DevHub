@@ -98,10 +98,29 @@ main {
 }
 
 #features {
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.features-text {
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.features-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
 section {
