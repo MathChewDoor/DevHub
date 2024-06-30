@@ -8,15 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>DevHub</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/page1/index.html">Sign-up</a></li>
-                <li><a href="./pages/page2/index.html">Log-in</a></li>
-                <li><a href="./pages/page3/index.html">Profile/Edit Profile</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>DevHub</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/page1/index.html">Sign-up</a></li>
+                    <li><a href="./pages/page2/index.html">Log-in</a></li>
+                    <li><a href="./pages/page3/index.html">Profile/Edit Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for tutorials, resources, and more...">
+            <button>Search</button>
+        </div>
     </header>
 
     <div class="container">
@@ -33,15 +39,6 @@
             <section id="features">
                 <h2>Welcome to DevHub</h2>
                 <p>Your comprehensive platform for web and mobile application development.</p>
-                <button onclick="location.href='signup.html'">Sign-up</button>
-                <button onclick="location.href='login.html'">Log-in</button>
-                <button onclick="location.href='profile.html'">Profile/Edit Profile</button>
-            </section>
-
-            <section id="search">
-                <h3>Search</h3>
-                <input type="text" placeholder="Search for tutorials, resources, and more...">
-                <button>Search</button>
             </section>
         </main>
     </div>
