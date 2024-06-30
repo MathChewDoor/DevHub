@@ -11,26 +11,20 @@ header {
     background-color: #333;
     color: white;
     padding: 1rem 0;
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.header-container h1 {
-    margin: 0;
+header h1 {
+    margin: 0 1rem;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    margin: 0;
 }
 
 nav ul li {
@@ -44,8 +38,8 @@ nav ul li a {
 
 .search-container {
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+    align-items: center;
+    margin-right: 1rem;
 }
 
 .search-container input {
@@ -99,19 +93,6 @@ main {
 
 #features {
     text-align: center;
-}
-
-#features button {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#features button:hover {
-    background-color: #555;
 }
 
 section {
