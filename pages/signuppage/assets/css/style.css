@@ -1,26 +1,16 @@
 /* styles.css */
 
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Reset and general styling */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
 header {
-    background-color: #615EFC; /* Purple */
+    background-color: #615EFC;
     color: white;
-    width: 100%;
     padding: 1rem 0;
     text-align: center;
 }
@@ -35,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 1rem;
 }
 
@@ -44,73 +34,64 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main content area */
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    width: 100%;
+    height: 80vh; /* Adjust as needed */
 }
 
 .signup-container {
-    background-color: #fff;
+    background-color: #EEEEEE;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
-h2 {
+.signup-container h2 {
     text-align: center;
-    color: #615EFC; /* Purple */
     margin-bottom: 1.5rem;
 }
 
-form {
+#signup-form {
     display: flex;
     flex-direction: column;
 }
 
-label {
+#signup-form label {
     margin-bottom: 0.5rem;
-    color: #444;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-button[type="submit"] {
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form input[type="password"] {
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+    border: 1px solid #D1D8C5;
+    border-radius: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-button[type="submit"] {
-    background-color: #615EFC; /* Purple */
+#signup-form button {
+    padding: 0.75rem;
+    background-color: #7E8EF1;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-    background-color: #7E8EF1; /* Light Purple */
+#signup-form button:hover {
+    background-color: #615EFC;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #615EFC; /* Purple */
+    background-color: #333;
     color: white;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
