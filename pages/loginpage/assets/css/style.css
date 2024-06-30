@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -12,8 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Ensure full viewport height */
-    margin: 0; /* Reset body margin */
+    height: 100vh;
 }
 
 header {
