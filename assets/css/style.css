@@ -69,13 +69,14 @@ nav ul li a {
     display: flex;
 }
 
-aside {
+.panel {
     background-color: #333;
     padding: 1rem;
     width: 200px;
+    flex-shrink: 0;
 }
 
-aside button {
+.panel button {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
@@ -87,7 +88,7 @@ aside button {
     text-align: left;
 }
 
-aside button:hover {
+.panel button:hover {
     background-color: #555;
 }
 
@@ -97,7 +98,10 @@ main {
 }
 
 #features {
-    text-align: center;
+    text-align: left;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section {
