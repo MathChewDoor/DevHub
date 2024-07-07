@@ -191,3 +191,33 @@ footer {
 footer:hover {
     background-color: #7e8ef1; /* Light purple */
 }
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.resource-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33.333% - 40px); /* 3 cards per row with margin consideration */
+    max-width: calc(33.333% - 40px);
+    text-align: left;
+}
+.resource-card h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.resource-card p {
+    margin: 0;
+    color: #555;
+}
+.resource-card a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 10px;
+}
