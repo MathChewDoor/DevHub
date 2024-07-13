@@ -249,6 +249,10 @@ footer:hover {
     width: 32px;
     height: 32px;
 }
+.icon-size3 {
+    width: 70px;
+    height: 70px;
+}
 
 #settings {
             background-color: #fff;
