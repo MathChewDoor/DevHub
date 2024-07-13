@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - DevHub</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .icon-size {
+            width: 35px;
+            height: 35px;
+        }
+        .features-image img {
+            width: 100%;
+            max-width: 40px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+    </style>
 </head>
 <body>
+    
     <header>
         <div class="header-left">
             <h1>DevHub</h1>
@@ -15,76 +28,100 @@
             <nav>
                 <ul>
                     <li><a href="../../index.html">Home</a></li>
+                    
                 </ul>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <aside class="panel">
-            <button onclick="location.href='../dashboard/index.html'">Dashboard</button>
-            <button onclick="location.href='../notifications/index.html'">Notifications</button>
-            <button onclick="location.href='../bookmarks/index.html'">Bookmarks/Favorites</button>
-            <button onclick="location.href='../settings/index.html'">Settings</button>
-            <button onclick="location.href='../contentup/index.html'">Content Upload/Management</button>
-            <button onclick="location.href='../contacts/index.html'">Contact Us</button>
-        </aside>
+        <aside class="panel2">
+            <div class="container">
+                <p style="color:rgb(0, 0, 0);">Repositories</p>
+                </div>
+                <div class="search-container2">
+                    <input type="text" placeholder="Search Repositories">
+                    <button>Search</button>
+                </div>
+                
+                <a href="../repositories/index.html">
+                    <p>ethereum-optimism../ optimism</p>
+                </a>
+                <a href="../repositories/index.html">
+                    <p> openrewrite / rewrite</p>
+                </a>
+                <a href="../repositories/index.html">
+                    <p>Frost078/bank-system</p>
+                </a>
+                <h2>Recent Activity</h2>
+                
+                    <p>When you take actions across DevHub, we’ll provide links to that activity here.</p>
+            </aside>
 
+    
         <main>
             <section id="dashboard">
                 <h2>Dashboard</h2>
                 <p>Welcome to your Dashboard. Here you can view your activity, manage your content, and stay updated with the latest notifications.</p>
-
-                <div class="dashboard-widgets">
-                    <!-- Recent Activity Widget -->
-                    <div class="widget">
-                        <h3>Recent Activity</h3>
-                        <ul>
-                            <li>Edited "JavaScript Best Practices" tutorial</li>
-                            <li>Uploaded new article on "CSS Grid Layout"</li>
-                            <li>Commented on "React Hooks" discussion</li>
-                            <li>Bookmarked "Flexbox Cheatsheet"</li>
-                        </ul>
-                    </div>
-
-                    <!-- Quick Stats Widget -->
-                    <div class="widget">
-                        <h3>Quick Stats</h3>
-                        <ul>
-                            <li>Articles: 45</li>
-                            <li>Tutorials: 10</li>
-                            <li>Projects: 7</li>
-                            <li>Followers: 1200</li>
-                        </ul>
-                    </div>
-
-                    <!-- Shortcuts Widget -->
-                    <div class="widget">
-                        <h3>Shortcuts</h3>
-                        <ul>
-                            <li><a href="../editor/index.html">Online Code Editor</a></li>
-                            <li><a href="../resources/index.html">Developer Resources</a></li>
-                            <li><a href="../projects/index.html">My Projects</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Tutorials Widget -->
-                    <div class="widget">
-                        <h3>Tutorials</h3>
-                        <ul>
-                            <li><a href="../tutorials/html.html">HTML Basics</a></li>
-                            <li><a href="../tutorials/css.html">CSS for Beginners</a></li>
-                            <li><a href="../tutorials/javascript.html">JavaScript Essentials</a></li>
-                            <li><a href="../tutorials/react.html">Getting Started with React</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="features-image">
+                    <a href="../notifications/index.html">
+                     <img src="img/notification.png" alt="Notification" class="icon-size">
+                    </a>
+                <a href="../bookmarks/index.html">
+                    <img src="img/Bookmarks.png" alt="Bookmark" class="icon-size">
+                </a>
+                <a href="../settings/index.html">
+                    <img src="img/Settings.png" alt="Settings" class="icon-size">
+                </a>
+                <a href="../contentup/index.html">
+                    <img src="img/Upload.png" alt="Upload" class="icon-size">
+                </a>
+                <a href="../contacts/index.html">
+                    <img src="img/Contacts.png" alt="Contacts" class="icon-size">
+                </a>
+                <main>
+                    <section id="features">
+                        <div class="features-container">
+                            <div class="features-text">
+                                <h1>Trending topics</h1>
+                                <p>SolaceInfotech</p>
+                                <a href="https://www.reddit.com/r/Webapplications/comments/fhcees/mobile_app_vs_web_app_which_one_is_best_for_you/">
+                                    <p>Mobile App vs Web App – Which one is best for you?</p>
+                                </a>
+                                <p>MySql/Topics</p>
+                                <a href="https://stackoverflow.com/questions/78732427/mysql-database-design-linked-tables-best-practice">
+                                    <p>
+                                        MYSQL database design linked tables best practice?
+                                    </p></a>
+                                    <p>Network Administrator</p>
+                                <a href="https://askubuntu.com/questions/1520107/dns-server-installation">
+                                    <p>DNS Server Installation</p> </a>
+                                    <a href="https://www.reddit.com/r/webdev/">
+                                        <p> See more..</p>
+                                    </a>
+                                
+                                 
+                            </div>
+                            
+                        </div>
+                    </section>
+                </main>
+                <main>
+                    <section id="features">
+                        <div class="features-container">
+                            <div class="features-text">
+                                <h2>Here's what we found based on your interests...</h2>
+                                 
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IVquJh3DXUA?si=ZzAozH-dAwsmBAHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                                 
+                            </div>
+                            
+                        </div>
+                    </section>
+                </main>
+            </div>
+                
+                
             </section>
         </main>
     </div>
-
-    <footer>
-        <p>&copy; 2024 DevHub. All rights reserved.</p>
-    </footer>
-</body>
-</html>
