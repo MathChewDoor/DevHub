@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+}
+
+.panel {
+    flex: 1;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+}
+
+.dashboard-widgets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.widget {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.widget h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    padding: 5px 0;
+}
+
+.widget ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
