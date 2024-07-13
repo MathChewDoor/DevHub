@@ -249,3 +249,50 @@ footer:hover {
     width: 32px;
     height: 32px;
 }
+
+#settings {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #settings h2 {
+            margin-top: 0;
+        }
+
+        .setting-option {
+            margin-bottom: 1rem;
+        }
+
+        .setting-option label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .setting-option input[type="text"],
+        .setting-option input[type="email"],
+        .setting-option input[type="password"],
+        .setting-option select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .setting-option input[type="checkbox"] {
+            margin-left: 0.5rem;
+        }
+
+        button[type="submit"] {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
